@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    height: 8000px;
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -22,4 +23,278 @@ select,
 button {
     font-family: inherit;
     font-size: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========== Common ===========*/
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    height: 52px;
+    border-radius: 6px;
+    background: var(--heading-color);
+    color: #fff;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.section-title {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    color: #696d77;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-title::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #696d77;
+}
+
+.section-heading {
+    margin-top: 12px;
+    color: var(--heading-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-decs {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+/* =========== Header ===========*/
+.header {
+    position: sticky;
+    top: -34px;
+    padding-top: 34px;
+    z-index: 99;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    background-color: #fff;
+}
+
+.header__navbar {
+    margin-left: 70px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.header__link {
+    color: #696d76;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header__action {
+    margin-left: auto;
+}
+
+.header__action-link {
+    margin-right: 25px;
+    color: #212832;
+    font-weight: 600;
+}
+
+.header__action-btn {
+    min-width: 113px;
+    padding: 12px 28px;
+}
+
+/* =========== Hero ===========*/
+.hero {
+    padding-top: 68px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+/* hero content */
+.hero__content {
+    width: 46%;
+    flex-shrink: 0;
+}
+
+.hero__heading {
+    font-size: 6rem;
+    line-height: 1.16;
+}
+
+.hero__heading-higthlight {
+    color: #7264d6;
+}
+
+.form-started {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.form-started__input {
+    padding: 23px;
+    width: 100%;
+    height: 100%;
+    color: #696d76;
+    outline: none;
+    border: none;
+}
+
+.form-started__btn {
+    margin: 8px;
+    width: 149px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #7264d6;
+}
+
+.hero_note {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+/* hero media */
+.hero__media {
+    position: relative;
+    flex-grow: 1;
+}
+
+.hero__wrap-img {
+    position: relative;
+    width: 296px;
+    border-radius: 40px;
+}
+
+.hero__img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.hero-deposite {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-deposite__title {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-deposite__money {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.hero-funds {
+    position: absolute;
+    right: -71px;
+    bottom: 64px;
+    display: flex;
+    align-items: center;
+    padding: 20px 14px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-funds__info {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.hero-funds__money {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-funds__title {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    color: #fff;
+    background: #da6464;
+}
+
+.hero-interest__percent {
+    margin-top: -8px;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-interest__title {
+    margin-top: -10px;
 }
