@@ -298,3 +298,94 @@ a {
 .hero-interest__title {
     margin-top: -10px;
 }
+
+/* =========== How is works ===========*/
+.guide {
+    margin-top: 160px;
+}
+
+.guide__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.guide__wrap-img {
+    position: relative;
+    width: 470px;
+    background-image: url(../imgs/guide_bgr.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.guide__img {
+    display: block;
+    padding: 0 7px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.guide__deco {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+}
+
+.guide-success {
+    position: absolute;
+    right: -100px;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px;
+    width: 226px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.guide-success__info {
+    font-family: Inter, sans-serif;
+}
+
+.guide-success__title {
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guide-success__sub-title {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.guide__list {
+    margin-top: 70px;
+}
+
+.guide-item {
+    width: 470px;
+}
+
+.guide-item + .guide-item {
+    margin-top: 30px;
+}
+
+.guide-item__title {
+    width: 100%;
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.guide-item__sub-title {
+    width: 100%;
+    color: #696d76;
+    line-height: 1.75;
+}
