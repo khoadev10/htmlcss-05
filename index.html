@@ -86,7 +86,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;@600&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
             rel="stylesheet"
         />
         <!-- Style -->
@@ -120,7 +120,7 @@
                     </nav>
                     <div class="header__action">
                         <a href="#!" class="header__action-link">Log in</a>
-                        <button class="btn header__action-btn">Sign up</button>
+                        <button class="header__action-btn">Sign up</button>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                             >
                             For Everyone.
                         </h1>
-                        <p class="section-decs">
+                        <p class="section-desc">
                             We bring together eveything that’s required to build
                             websites and apps that accept payments and send
                             payouts globally. We are the best platform.
@@ -151,8 +151,9 @@
                                 id="get-started"
                                 placeholder="Your email address"
                                 class="form-started__input"
+                                autocomplete="off"
                             />
-                            <button class="btn form-started__btn">
+                            <button class="btn-get-started form-started__btn">
                                 Get Started
                             </button>
                         </form>
@@ -279,5 +280,122 @@
                 </div>
             </div>
         </section>
+        <!-- Feature -->
+        <div class="feature">
+            <div class="container">
+                <div class="feature__inner">
+                    <!-- Content Top -->
+                    <section class="feature__content">
+                        <p class="section-title">Digital Smart Wallet</p>
+                        <h2 class="section-heading">
+                            One Card For All Your Payments
+                        </h2>
+                        <p class="section-desc">
+                            We bring together eveything that’s required to build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.
+                        </p>
+                        <ul class="feature__list">
+                            <li class="feature__item">Global Payments</li>
+                            <li class="feature__item">One-Click Purchase</li>
+                            <li class="feature__item">Friendly Price</li>
+                        </ul>
+                        <button class="btn-get-started feature__btn">
+                            Get Started
+                        </button>
+                    </section>
+                    <!-- Media Top -->
+                    <div class="feature__media">
+                        <div class="feature__media-inner">
+                            <img
+                                src="./assets/imgs/feature-atm-card.png"
+                                alt=""
+                                class="feature__atm-card"
+                            />
+                            <!-- Send Money -->
+                            <div class="feature-payment">
+                                <div class="feature-payment__icon">
+                                    <img
+                                        src="./assets/icons/feature-send.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="feature-payment__info">
+                                    <div class="feature-payment__row">
+                                        <p class="feature-payment__title">
+                                            Send Money
+                                        </p>
+                                        <span class="feature-payment__money"
+                                            >- $600</span
+                                        >
+                                    </div>
+                                    <div class="feature-payment__row">
+                                        <p class="feature-payment__text">
+                                            Airbnb Payment
+                                        </p>
+                                        <span class="feature-payment__text"
+                                            >Sep 23</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Income -->
+                            <div class="feature-income">
+                                <div class="feature-income__icon">
+                                    <img
+                                        src="./assets/icons/feature-income.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <p class="feature-income__title">Income</p>
+                                <p class="feature-icome__money">$1250</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Media Bottom -->
+                    <div class="feature__media feature__media--bottom">
+                        <img src="./assets/imgs/feature-1.png" alt="" class="feature__img-bottom">
+                        <article class="payment-method">
+                            <h3 class="payment-method__title">Choose payment method:</h3>
+                            <div class="payment-method__list">
+                                <img src="./assets/imgs/feature-payment-method-01.svg" alt="">
+                                <img src="./assets/imgs/feature-payment-method-02.svg" alt="">
+                                <img src="./assets/imgs/feature-payment-method-03.svg" alt="">
+                                <img src="./assets/imgs/feature-payment-method-04.svg" alt="">
+                                <img src="./assets/imgs/feature-payment-method-05.svg" alt="">
+                                <img src="./assets/imgs/feature-payment-method-06.svg" alt="">
+                            </div>
+                            <div class="payment-method__deco">
+                                <img src="./assets/icons/feature-deco-money.svg" alt="">
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Content Bottom -->
+                    <section class="feature__content feature__content--bottom">
+                        <p class="section-title">Digital Smart Wallet</p>
+                        <h2 class="section-heading">
+                            Transfer and Deposite Your Money Anytime
+                        </h2>
+                        <p class="section-desc">
+                            We bring together eveything that’s required to build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.
+                        </p>
+                        <ul class="feature__list">
+                            <li class="feature__item">Powerfull App</li>
+                            <li class="feature__item">
+                                Transparency And Speed
+                            </li>
+                            <li class="feature__item">
+                                Multiple Use Capabilities
+                            </li>
+                        </ul>
+                        <button class="btn-get-started feature__btn">
+                            Get Started
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

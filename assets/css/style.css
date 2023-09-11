@@ -28,6 +28,9 @@ button {
 button {
     outline: none;
     border: none;
+    color: #fff;
+    font-weight: 600;
+    line-height: 2.8rem;
 }
 
 button:hover {
@@ -46,13 +49,10 @@ a {
     margin: 0 auto;
 }
 
-.btn {
-    height: 52px;
-    border-radius: 6px;
-    background: var(--heading-color);
-    color: #fff;
-    font-weight: 600;
-    line-height: 2.8rem;
+.btn-get-started {
+    min-width: 149px;
+    height: 58px;
+    border-radius: 8px;
 }
 
 .section-title {
@@ -81,7 +81,7 @@ a {
     line-height: 1.25;
 }
 
-.section-decs {
+.section-desc {
     margin-top: 20px;
     color: #696d76;
     font-size: 1.8rem;
@@ -133,6 +133,8 @@ a {
 .header__action-btn {
     min-width: 113px;
     padding: 12px 28px;
+    border-radius: 6px;
+    background: var(--heading-color);
 }
 
 /* =========== Hero ===========*/
@@ -182,10 +184,6 @@ a {
 
 .form-started__btn {
     margin: 8px;
-    width: 149px;
-    height: 58px;
-    flex-shrink: 0;
-    border-radius: 8px;
     background: #7264d6;
 }
 
@@ -296,7 +294,7 @@ a {
 }
 
 .hero-interest__title {
-    margin-top: -10px;
+    margin-top: -4px;
 }
 
 /* =========== How is works ===========*/
@@ -306,16 +304,16 @@ a {
 
 .guide__inner {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 470px 470px;
     align-items: center;
-    column-gap: 130px;
+    justify-content: space-between;
 }
 
 .guide__wrap-img {
     position: relative;
-    width: 470px;
     background-image: url(../imgs/guide_bgr.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center bottom;
 }
 
@@ -323,6 +321,7 @@ a {
     display: block;
     padding: 0 7px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -388,4 +387,219 @@ a {
     width: 100%;
     color: #696d76;
     line-height: 1.75;
+}
+
+/* =========== Feature ===========*/
+.feature {
+    margin-top: 160px;
+}
+
+.feature__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 160px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* content */
+.feature__content {
+    width: 470px;
+}
+
+.feature__content--bottom {
+    grid-column: 2 / 3;
+    margin-left: auto;
+}
+
+.feature__list {
+    margin-top: 28px;
+}
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature__item::before {
+    content: "";
+    display: block;
+    margin-top: -2px;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #7264d6;
+}
+
+.feature__item + .feature__item {
+    margin-top: 18px;
+}
+
+.feature__btn {
+    margin-top: 38px;
+    background: #212832;
+}
+
+/* media top */
+.feature__media-inner {
+    position: relative;
+}
+
+.feature__atm-card {
+    margin-right: 88px;
+    width: 482px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.feature-payment {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    padding: 23px 13px;
+    width: 276px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature-payment__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.feature-payment__row + .feature-payment__row {
+    margin-top: 4px;
+}
+
+.feature-payment__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(218, 100, 100, 0.1);
+}
+
+.feature-payment__info {
+    font-family: Inter, sans-serif;
+}
+
+.feature-payment__title {
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.feature-payment__money {
+    color: #212832;
+}
+
+.feature-payment__text {
+    color: #696d76;
+    font-size: 1rem;
+}
+
+.feature-income {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    padding: 15px;
+    width: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.feature-income__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.feature-income__title {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feature-icome__money {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* media bottom */
+.feature__media--bottom {
+    position: relative;
+    padding: 0 28px;
+    width: 470px;
+    background-image: url(../imgs/feature-bgr.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.feature__img-bottom {
+    display: block;
+    width: 100%;
+}
+
+.payment-method {
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    padding: 28px;
+    width: 281px;
+    background: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.payment-method__title {
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.payment-method__list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.payment-method__deco {
+    position: absolute;
+    top: -35px;
+    right: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #7264d6;
 }
