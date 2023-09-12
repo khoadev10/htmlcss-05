@@ -9,10 +9,10 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 8000px;
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -87,6 +87,14 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
+}
+@keyframes spinner {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
 
 /* =========== Header ===========*/
@@ -826,8 +834,8 @@ a {
 }
 
 .install__title {
-   justify-content: center;
-   color: #FFF;
+    justify-content: center;
+    color: #fff;
 }
 
 .install__title::before {
@@ -856,6 +864,7 @@ a {
 
 .install__star {
     position: absolute;
+    animation: spinner 3s linear infinite;
 }
 
 .install__star:nth-of-type(1) {
@@ -869,11 +878,123 @@ a {
 }
 
 .install__star:nth-of-type(3) {
-   bottom: 49px;
-   left: 166px;
+    bottom: 49px;
+    left: 166px;
 }
 .install__star:nth-of-type(4) {
     bottom: 49px;
     right: 166px;
 }
 
+/* =========== Footer ===========*/
+.footer {
+    padding-top: 100px;
+}
+
+.footer__row {
+    display: grid;
+    justify-content: space-between;
+    grid-row: auto;
+    grid-template-areas:
+        "col-1 col-2 col-3 col-4"
+        "col-1 col-2 col-3 col-5";
+}
+
+.footer__colunm-1 {
+    grid-area: col-1;
+}
+
+.footer__colunm-2 {
+    grid-area: col-2;
+}
+
+.footer__colunm-3 {
+    grid-area: col-3;
+}
+
+.footer__colunm-4 {
+    width: 371px;
+    grid-area: col-4;
+}
+
+.footer__colunm-5 {
+    grid-area: col-5;
+    margin-top: 48px;
+}
+
+.footer__title {
+    margin-bottom: 24px;
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.footer__item {
+    margin-top: 12px;
+}
+
+.footer__link {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+    opacity: 0.75;
+}
+
+.form-subscribe {
+    display: flex;
+    column-gap: 20px;
+}
+
+.form-subscribw__input {
+    padding: 12px;
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.form-subscribw__input,
+.form-subscribw__input::placeholder {
+    color: #8e919a;
+    line-height: 1.75;
+}
+
+.form-subscribw__input::placeholder {
+    opacity: 0.7;
+}
+
+.form-subscibe__btn {
+    min-width: 113px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #7264d6;
+}
+
+.footer__wrap-contact {
+    margin-top: 54px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.footer__contact {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    text-decoration-line: underline;
+}
+
+.footer__bottom {
+    margin-top: 28px;
+    padding: 28px 0;
+    text-align: center;
+    background: #7264d6;
+}
+
+.footer_copy {
+    color: #fff;
+    line-height: 1.75;
+}
